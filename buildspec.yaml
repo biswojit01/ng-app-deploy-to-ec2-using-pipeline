@@ -4,9 +4,8 @@ phases:
   install:
     commands:
       - echo installing nodejs...
-      - sudo yum update
       - curl -fsSL https://rpm.nodesource.com/setup_12.x | sudo bash -
-      - sudo yum update
+      - sudo yum update -y
       - sudo yum install -y nodejs
   pre_build:
     commands:
