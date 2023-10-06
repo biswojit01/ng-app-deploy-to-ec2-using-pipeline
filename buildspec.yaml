@@ -15,7 +15,7 @@ phases:
     commands:
       # - echo testing...
       # - echo building...
-      - ng build 
+      - ng build --prod
   post_build:
     commands:
       - mv appspec.yml ./dist/my-dream-app
