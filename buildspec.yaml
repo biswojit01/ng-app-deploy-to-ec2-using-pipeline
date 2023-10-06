@@ -4,12 +4,14 @@ phases:
   install:
     commands:
       - echo installing nodejs...
-      - curl -sL https://deb.nodesource.com/setup_16.x | bash -
-      - apt-get install -y nodejs  #aws code build use ubuntu environement
+      - sudo yum update
+      - curl -fsSL https://rpm.nodesource.com/setup_12.x | sudo bash -
+      - sudo yum update
+      - sudo yum install -y nodejs
   pre_build:
     commands:
       - echo installing dependencies...
-      - npm i -g @angular/cli
+      - npm install -g @angular/cli
       - npm install
   build:
     commands:
