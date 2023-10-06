@@ -5,7 +5,6 @@ phases:
     commands:
       - echo installing nodejs...
       - curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-      - sudo yum update -y
       - sudo yum install -y nodejs
   pre_build:
     commands:
